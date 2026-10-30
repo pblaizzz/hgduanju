@@ -1,0 +1,94 @@
+
+> hongguo-web@0.1.0 test
+> tsx --test tests/*.test.ts
+
+TAP version 13
+# Subtest: catalog, search and detail endpoints serve consistent demo data
+ok 1 - catalog, search and detail endpoints serve consistent demo data
+  ---
+  duration_ms: 4.103542
+  ...
+# Subtest: invalid source, kind, view and live IDs return client errors
+ok 2 - invalid source, kind, view and live IDs return client errors
+  ---
+  duration_ms: 1.099208
+  ...
+# Subtest: missing demo titles and episodes are not silently replaced with other content
+ok 3 - missing demo titles and episodes are not silently replaced with other content
+  ---
+  duration_ms: 0.59
+  ...
+# Subtest: demo playback explicitly identifies its source and exposes no keys
+ok 4 - demo playback explicitly identifies its source and exposes no keys
+  ---
+  duration_ms: 0.332875
+  ...
+# Subtest: byte ranges support seeking, open ranges and suffix ranges
+ok 5 - byte ranges support seeking, open ranges and suffix ranges
+  ---
+  duration_ms: 1.242708
+  ...
+# Subtest: invalid and multipart ranges are rejected
+ok 6 - invalid and multipart ranges are rejected
+  ---
+  duration_ms: 0.081208
+  ...
+# Subtest: time display handles unavailable metadata
+ok 7 - time display handles unavailable metadata
+  ---
+  duration_ms: 0.07175
+  ...
+# Subtest: demo search matches titles and genres; content filters are real filters
+ok 8 - demo search matches titles and genres; content filters are real filters
+  ---
+  duration_ms: 0.134375
+  ...
+# Subtest: demo episode IDs are validated against actual episode counts
+ok 9 - demo episode IDs are validated against actual episode counts
+  ---
+  duration_ms: 0.189209
+  ...
+# Subtest: history updates one record per drama without mixing sources
+ok 10 - history updates one record per drama without mixing sources
+  ---
+  duration_ms: 0.074709
+  ...
+# Subtest: corrupt or partially invalid browser storage does not break the app
+ok 11 - corrupt or partially invalid browser storage does not break the app
+  ---
+  duration_ms: 0.172875
+  ...
+# Subtest: resume continues unfinished episodes and moves on after completion
+ok 12 - resume continues unfinished episodes and moves on after completion
+  ---
+  duration_ms: 0.111209
+  ...
+# Subtest: default stream selection prefers browser-compatible video and respects explicit quality
+ok 13 - default stream selection prefers browser-compatible video and respects explicit quality
+  ---
+  duration_ms: 0.836458
+  ...
+# Subtest: CENC input is prepared as a seekable MP4 and served with correct byte ranges
+ok 14 - CENC input is prepared as a seekable MP4 and served with correct byte ranges
+  ---
+  duration_ms: 134.214458
+  ...
+# Subtest: curl transport preserves compressed bytes, cookies and HTTP error responses
+ok 15 - curl transport preserves compressed bytes, cookies and HTTP error responses
+  ---
+  duration_ms: 34.903834
+  ...
+# Subtest: HEIC covers are served to browsers as JPEGs
+ok 16 - HEIC covers are served to browsers as JPEGs
+  ---
+  duration_ms: 44.287125
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 397.275875
